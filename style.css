@@ -1,0 +1,104 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -webkit-box-shadow: 0 4px 10px -2px gray;
+          box-shadow: 0 4px 10px -2px gray;
+  position: relative;
+}
+
+header img {
+  width: 40%;
+  height: auto;
+}
+
+#localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#localisation .localisation__icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eaeaea;
+  width: 100%;
+}
+
+#localisation .localisation__icone div {
+  margin-right: 10px;
+}
+
+#localisation .localisation__presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+#localisation .localisation__presentation h1 {
+  text-align: center;
+}
+
+#localisation .localisation__presentation p {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#localisation .localisation__presentation input {
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 15px grey;
+          box-shadow: 5px 5px 15px grey;
+  padding: 15px;
+  margin-top: 10px;
+  color: white;
+  outline: none;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(to top left, #9356dc, #ff79da);
+}
+/*# sourceMappingURL=style.css.map */
