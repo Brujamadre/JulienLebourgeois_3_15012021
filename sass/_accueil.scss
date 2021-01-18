@@ -15,8 +15,6 @@ header {
 #localisation {
   @include boxcenter;
   flex-direction: column;
-  flex-wrap: wrap;
-
   .localisation__icone {
     @include boxcenter;
     background-color: $darkerbackgroung;
@@ -32,7 +30,7 @@ header {
     background-color: $lightbackgroung;
     padding-right: 15%;
     padding-left: 15%;
-    h1 {
+    h2 {
       text-align: center;
     }
     p {
@@ -40,18 +38,130 @@ header {
       margin-top: 0px;
     }
     input {
-      border-radius: 50px;
-      border: none;
-      box-shadow: 5px 5px 15px grey;
-      padding: 15px;
-      margin-top: 10px;
-      color: white;
-      outline: none;
-      background-image: linear-gradient(
-        to top left,
-        $color_primaire,
-        $color_secondaire
-      );
+      @include basebtn;
+      font-weight: 500;
+      &:hover {
+        box-shadow: 5px 5px 10px black;
+        transition: brigtness(1.1) 2500ms;
+      }
+    }
+  }
+}
+
+#fonctionnement {
+  @include boxcenter;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 60px;
+  h2 {
+    position: relative;
+    transform: translateX(-45%);
+  }
+  i {
+    margin: 0px 30px;
+    color: grey;
+  }
+  p {
+    font-weight: bold;
+  }
+  .fonctionnement__number {
+    background-color: $color_primaire;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    color: white;
+    @include boxcenter;
+    font-size: 12px;
+  }
+  .fonctionnement__lien {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 85%;
+    text-decoration: none;
+    color: black;
+    background-color: $lightbackgroung;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+    position: relative;
+    z-index: 1;
+    &:hover {
+      i {
+        color: $color_primaire;
+      }
+      &::after {
+        @include pseudoelem;
+        background-color: #f5edff;
+        opacity: 1;
+        z-index: -1;
+        transition: opacity 250ms;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+#restaurants {
+  width: 100%;
+  background-color: $lightbackgroung;
+  @include boxcenter;
+  flex-direction: column;
+  h2 {
+    position: relative;
+    transform: translateX(-80%);
+  }
+}
+
+.restaurant {
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  .restaurant__image {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      margin-bottom: none;
+      object-fit: cover;
+    }
+    .restaurant__nouveau {
+      position: absolute;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 3px;
+      top: 15px;
+      right: 15px;
+      color: $color_nouveau;
+      background-color: $color_backnouveau;
+      width: auto;
+      text-align: center;
+    }
+  }
+  .restaurant__txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 5px;
+  }
+  i {
+    font-size: 30px;
+    &:hover {
+      background: $color_gradientheart;
     }
   }
 }

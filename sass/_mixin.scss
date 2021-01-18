@@ -3,3 +3,28 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin basebtn {
+  border-radius: 50px;
+  border: none;
+  box-shadow: 5px 5px 15px grey;
+  padding: 15px;
+  margin-top: 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to top left,
+    $color_primaire,
+    $color_secondaire
+  );
+}
+
+@mixin pseudoelem {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
