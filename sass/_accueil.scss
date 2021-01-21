@@ -41,17 +41,7 @@
   }
 }
 
-/* Site */
-header {
-  @include boxcenter;
-  padding: 5px;
-  box-shadow: 0 4px 10px -2px gray;
-  position: relative;
-  img {
-    width: 40%;
-    height: auto;
-  }
-}
+/* Page accueil*/
 
 #localisation {
   @include boxcenter;
@@ -67,7 +57,6 @@ header {
   .localisation__presentation {
     @include boxcenter;
     flex-direction: column;
-
     padding-bottom: 60px;
     background-color: $lightbackgroung;
     padding-right: 15%;
@@ -82,9 +71,10 @@ header {
     input {
       @include basebtn;
       font-weight: 500;
+      transition: 1500ms;
       &:hover {
         box-shadow: 5px 5px 10px black;
-        transition: brigtness(1.1) 2500ms;
+        transition: brigtness(1.1);
       }
     }
   }
@@ -97,7 +87,7 @@ header {
   margin-bottom: 60px;
   h2 {
     position: relative;
-    transform: translateX(-45%);
+    transform: translateX(-37%);
   }
   i {
     margin: 0px 30px;
@@ -136,9 +126,7 @@ header {
       &::after {
         @include pseudoelem;
         background-color: #f5edff;
-        opacity: 1;
         z-index: -1;
-        transition: opacity 250ms;
         border-radius: 15px;
       }
     }
@@ -154,19 +142,13 @@ header {
   flex-direction: column;
   h2 {
     position: relative;
-    transform: translateX(-80%);
+    transform: translateX(-70%);
   }
 }
 
 .restaurant {
-  width: 90%;
-  margin-top: 20px;
+  @include boxbase;
   height: auto;
-  border-radius: 15px;
-  box-shadow: 5px 5px 30px grey;
-  text-decoration: none;
-  color: black;
-  background-color: white;
   .restaurant__image {
     width: 100%;
     position: relative;
@@ -230,27 +212,20 @@ header {
   }
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 13px;
-  text-align: left;
-  padding-left: 20px;
-  padding-bottom: 40px;
-  a {
-    text-decoration: none;
-    color: white;
-    height: 25px;
-    display: flex;
-    align-items: center;
+@media all and (min-width: 500px) {
+  .localisation__presentation {
+    width: 100%;
   }
-  .footer__icone {
-    i {
-      margin-right: 5px;
+  #fonctionnement {
+    h2 {
+      position: static;
+      transform: translateX(0%);
     }
-    .far {
-      transform: rotate(340deg);
+  }
+  #restaurants {
+    h2 {
+      position: static;
+      transform: translateX(0%);
     }
   }
 }

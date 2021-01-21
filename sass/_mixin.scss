@@ -13,11 +13,22 @@
   color: white;
   outline: none;
   cursor: pointer;
-  background-image: linear-gradient(
+  background-image: $color_gradientheart
+    /*linear-gradient(
     to top left,
     $color_primaire,
     $color_secondaire
-  );
+  )*/;
+}
+
+@mixin boxbase {
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px grey;
+  text-decoration: none;
+  color: black;
+  background-color: white;
 }
 
 @mixin pseudoelem {
