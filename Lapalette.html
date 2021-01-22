@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>La palette du goût</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="images/logo/ohmyfood.png" alt="logo">
+    </header>
+    
+    <main>
+        <section class="presentation resto1">
+            <div>
+                <h1>La palette du goût</h1>
+                <i class="fas fa-heart" id="coeur__plein"></i>
+                <i class="far fa-heart" id="coeur__vide"></i>
+            </div>
+        </section>
+    
+        <section class="carte entree">
+            <div class="annonce">
+                <h4>ENTREES</h4>
+                <div class="trait"></div>
+            </div>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Fricassé d'escargot</p>
+                    <p class="plat__acc">Au piment d'espelette</p>
+                </div>
+                <div class="plat__prix">
+                    <p>25€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Foie gras de canard mi-cuit</p>
+                    <p class="plat__acc">Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="plat__prix">
+                    <p>35€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Oeuf au plat</p>
+                    <p class="plat__acc">Assaisonné à la truffe sur lit de caviar </p>
+                </div>
+                <div class="plat__prix">
+                    <p>20€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+        </section>
+    
+        <section class="carte plats">
+            <div class="annonce">
+                <h4>PLATS</h4>
+                <div class="trait"></div>
+            </div>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Filet de boeuf aux herbes</p>
+                    <p class="plat__acc">Accompagné de sa ribambelle de légumes</p>
+                </div>
+                <div class="plat__prix">
+                    <p>40€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Parmentier de queue de boeuf</p>
+                    <p class="plat__acc">À la truffe noire sur sa purée de panais</p>
+                </div>
+                <div class="plat__prix">
+                    <p>35€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Filet de Turbot</p>
+                    <p class="plat__acc">Aux agrumes</p>
+                </div>
+                <div class="plat__prix">
+                    <p>44€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+        </section>
+    
+        <section class="carte desserts">
+            <div class="annonce">
+                <h4>DESSERTS</h4>
+                <div class="trait"></div>
+            </div>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Paris-Brest</p>
+                    <p class="plat__acc">Revisité</p>
+                </div>
+                <div class="plat__prix">
+                    <p>18€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Macaron au chocolat d'exception</p>
+                    <p class="plat__acc">Et glace à la vanille de Madagascar</p>
+                </div>
+                <div class="plat__prix">
+                    <p>22€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+            <a class="plat__container" href="#">
+                <div class="plat__titre">
+                    <p class="plat__nom">Mousse au chocolat</p>
+                    <p class="plat__acc">Au piment d'espelette et à la truffe noire</p>
+                </div>
+                <div class="plat__prix">
+                    <p>23€</p>
+                    <span class="plat__check">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div> 
+            </a>
+        </section>
+    
+        <section id="btn">
+            <input type="button" value="Commander">
+        </section>
+    </main>
+
+    <footer>
+        <h1>ohmyfood</h1>
+        <a href="#" class="footer__icone">
+            <i class="fas fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+        </a>
+        <a href="#" class="footer__icone">
+            <i class="far fa-handshake"></i>
+            <p>Devenir partenaire</p>
+        </a>
+        <a href="#">Mentions légales</a>
+        <a href="mailto:nullepart@mozilla.org">Contact</a>
+    </footer>
+</body>
+</html>

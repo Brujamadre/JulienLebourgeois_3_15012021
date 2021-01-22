@@ -247,8 +247,7 @@ footer .footer__icone .far {
 #localisation .localisation__presentation input:hover {
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
-  -webkit-transition: brigtness(1.1);
-  transition: brigtness(1.1);
+  opacity: 0.7;
 }
 
 #fonctionnement {
@@ -389,7 +388,7 @@ footer .footer__icone .far {
   margin: auto;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  margin-bottom: none;
+  margin-bottom: 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -435,16 +434,16 @@ footer .footer__icone .far {
   right: 30px;
 }
 
-.restaurant .restaurant__txt #coeur__vide {
+.restaurant .restaurant__txt .coeur__vide {
   opacity: 1;
 }
 
-.restaurant .restaurant__txt #coeur__vide:hover {
+.restaurant .restaurant__txt .coeur__vide:hover {
   z-index: -1;
   opacity: 0;
 }
 
-.restaurant .restaurant__txt #coeur__plein {
+.restaurant .restaurant__txt .coeur__plein {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
@@ -454,7 +453,7 @@ footer .footer__icone .far {
   transition: opacity 1000ms;
 }
 
-.restaurant .restaurant__txt #coeur__plein:hover {
+.restaurant .restaurant__txt .coeur__plein:hover {
   z-index: 1;
   opacity: 1;
 }
@@ -475,8 +474,23 @@ footer .footer__icone .far {
   }
 }
 
-#presentation {
+.resto1 {
   background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.resto2 {
+  background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.resto3 {
+  background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.resto4 {
+  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.presentation {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -496,12 +510,12 @@ footer .footer__icone .far {
           justify-content: flex-end;
 }
 
-#presentation h1 {
+.presentation h1 {
   font-size: 20px;
   font-weight: bolder;
 }
 
-#presentation div {
+.presentation div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,23 +534,23 @@ footer .footer__icone .far {
   height: 80px;
 }
 
-#presentation div i {
+.presentation div i {
   cursor: pointer;
   font-size: 30px;
   position: absolute;
   right: 30px;
 }
 
-#presentation div #coeur__vide {
+.presentation div #coeur__vide {
   opacity: 1;
 }
 
-#presentation div #coeur__vide:hover {
+.presentation div #coeur__vide:hover {
   z-index: -1;
   opacity: 0;
 }
 
-#presentation div #coeur__plein {
+.presentation div #coeur__plein {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
@@ -546,7 +560,7 @@ footer .footer__icone .far {
   transition: opacity 1000ms;
 }
 
-#presentation div #coeur__plein:hover {
+.presentation div #coeur__plein:hover {
   z-index: 1;
   opacity: 1;
 }
@@ -720,7 +734,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
 }
 
 #btn input {
@@ -744,10 +758,63 @@ h4 {
 #btn input:hover {
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
-  -webkit-filter: brigtness(1.1);
-          filter: brigtness(1.1);
+  opacity: 0.7;
 }
 
+/*animation de la page */
+@-webkit-keyframes transition {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes transition {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.entree {
+  -webkit-animation: transition 3000ms ease-in-out;
+          animation: transition 3000ms ease-in-out;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.plats {
+  -webkit-animation: transition 3000ms ease-in-out;
+          animation: transition 3000ms ease-in-out;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.desserts {
+  -webkit-animation: transition 3000ms ease-in-out;
+          animation: transition 3000ms ease-in-out;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+/* responsive */
 @media all and (min-width: 500px) {
   .annonce {
     position: static;
