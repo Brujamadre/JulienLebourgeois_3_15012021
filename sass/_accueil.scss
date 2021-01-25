@@ -231,4 +231,7 @@
       transform: translateX(0%);
     }
   }
+  footer {
+    @include boxcenter;
+  }
 }
