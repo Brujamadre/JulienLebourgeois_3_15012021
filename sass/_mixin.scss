@@ -10,22 +10,22 @@
   box-shadow: 5px 5px 15px grey;
   padding: 15px;
   margin-top: 10px;
+  font-weight: bold;
   color: white;
   outline: none;
   cursor: pointer;
-  background-image: $color_gradientheart
-    /*linear-gradient(
+  background-image: linear-gradient(
     to top left,
     $color_primaire,
     $color_secondaire
-  )*/;
+  );
 }
 
 @mixin boxbase {
   width: 90%;
   margin-top: 20px;
   border-radius: 15px;
-  box-shadow: 5px 5px 30px grey;
+  box-shadow: 5px 5px 30px silver;
   text-decoration: none;
   color: black;
   background-color: white;
