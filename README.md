@@ -1,6 +1,17 @@
-OhMyFood
+# OhMyFood
 
+Link : https://julien-lebourgeois.github.io/OhMyFood.io/
+
+This is a project from my web development courses. This part was about CSS's animation and responsive website.
 Website to order food from different restaurants around Paris.
 
-This project was the second one of my journey to become a web developer. Created through the mobile first methode.
-The goal was to make this website usable on phone and also to use different kind of animations all along the experience using it.
+Technologies used :
+
+- HTML
+- CSS (SASS)
+
+Project goals :
+
+- Navigate between different html pages
+- Use the SCSS language through SASS
+- Create dynamic animations
